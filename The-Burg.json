@@ -1,0 +1,135 @@
+{
+  "catalogue": {
+    "name": "The Burg",
+    "id": "aacf-0995-227a-1398",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "fe4e-800f-c049-e372",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "entryLinks": [
+      {
+        "name": "Light Frame",
+        "id": "e440-2960-9669-36e3",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "a006-10b7-f863-2a28",
+        "type": "selectionEntry",
+        "constraints": [
+          {
+            "id": "017b-10b7-7241-35e5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "name": "Rookie Pilot",
+        "id": "b48f-f1c6-e2ed-c6d1",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "7d86-ca74-2d80-0a16",
+        "type": "selectionEntry",
+        "constraints": [
+          {
+            "id": "ebaf-308a-e633-5d17",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Trained Pilot",
+        "id": "9c00-2a82-0dc1-e721",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "2615-f47a-3a83-2294",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Veteran Pilot",
+        "id": "d40f-6bb5-9a78-55c7",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "c756-895d-7cc3-802e",
+        "type": "selectionEntry",
+        "constraints": [
+          {
+            "id": "ce40-c1bb-9167-82f2",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Medium Frame",
+        "id": "6261-ac73-2e80-c90c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "06a5-0918-e699-47c2",
+        "type": "selectionEntry",
+        "constraints": [
+          {
+            "id": "fe60-76bb-a591-d1c5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "name": "Heavy Frame",
+        "id": "8460-552b-eff1-113a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "feb6-4154-28b1-7bff",
+        "type": "selectionEntry",
+        "constraints": [
+          {
+            "id": "a7e7-5153-1efd-dac4",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ]
+      }
+    ],
+    "rules": [{"name": "Humanity 2.0", "id": "46d4-f3eb-e79c-71a5", "hidden": false}]
+  }
+}

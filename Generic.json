@@ -1,0 +1,69 @@
+{
+  "catalogue": {
+    "name": "Generic",
+    "id": "4971-4f81-ca6a-f75e",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "fe4e-800f-c049-e372",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "entryLinks": [
+      {
+        "name": "Light Frame",
+        "id": "97a4-c0d3-ac2c-e96f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "a006-10b7-f863-2a28",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Rookie Pilot",
+        "id": "391f-768f-53ae-4696",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "7d86-ca74-2d80-0a16",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Veteran Pilot",
+        "id": "bc3b-c482-b11b-73ec",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "c756-895d-7cc3-802e",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Trained Pilot",
+        "id": "285d-76af-bd08-5f31",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "2615-f47a-3a83-2294",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Medium Frame",
+        "id": "47b1-16a3-4c33-11a8",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "06a5-0918-e699-47c2",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Heavy Frame",
+        "id": "37f1-f820-a93a-6f49",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "feb6-4154-28b1-7bff",
+        "type": "selectionEntry"
+      }
+    ]
+  }
+}
