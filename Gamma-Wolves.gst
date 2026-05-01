@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="fe4e-800f-c049-e372" name="Gamma Wolves" revision="1" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="fe4e-800f-c049-e372" name="Gamma Wolves" revision="2" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <costTypes>
-    <costType id="b3ca-2e05-1751-fe75" name=" Pilot Value" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="a72c-1f9c-fecf-8113" name=" Materiel" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="7152-d956-d07d-32cf" name=" Weight" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="b3ca-2e05-1751-fe75" name=" Pilot Value" defaultCostLimit="-1" hidden="false"/>
+    <costType id="a72c-1f9c-fecf-8113" name=" Materiel" defaultCostLimit="-1" hidden="false"/>
+    <costType id="7152-d956-d07d-32cf" name=" Weight" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="eb45-26b3-0e00-b5bc" name="Pilot">
@@ -50,12 +50,12 @@
       <categoryLinks>
         <categoryLink id="f7b1-6300-733e-661c" name="Frames" hidden="false" targetId="be49-8610-9238-4495" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89bc-faad-ce37-34c5" type="max"/>
+            <constraint field="selections" scope="roster" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89bc-faad-ce37-34c5" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="5e17-7d60-1ee2-a09d" name="Pilots" hidden="false" targetId="c5ba-846d-795f-9b6f" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c245-7c1d-f7bd-da01" type="max"/>
+            <constraint field="selections" scope="roster" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c245-7c1d-f7bd-da01" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -75,16 +75,16 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="0b08-ec71-2512-498a" name="New CategoryLink" hidden="false" targetId="c5ba-846d-795f-9b6f" primary="true"/>
+        <categoryLink id="0b08-ec71-2512-498a" name="Pilots" hidden="false" targetId="c5ba-846d-795f-9b6f" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="4890-9f9f-a752-abcc" name="Ace" hidden="false" collective="false" import="true" targetId="5ea0-143f-d65d-af24" type="selectionEntry"/>
         <entryLink id="d7e8-6529-5ab6-97f2" name="Ace Skill Upgrade" hidden="false" collective="false" import="true" targetId="2913-fe8b-617b-62f5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="2.0"/>
-        <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0.0"/>
-        <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
+        <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="2"/>
+        <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0"/>
+        <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2615-f47a-3a83-2294" name="Trained Pilot" hidden="false" collective="false" import="true" type="unit">
@@ -100,16 +100,16 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="d9a0-89c0-f7b7-3808" name="New CategoryLink" hidden="false" targetId="c5ba-846d-795f-9b6f" primary="true"/>
+        <categoryLink id="d9a0-89c0-f7b7-3808" name="Pilots" hidden="false" targetId="c5ba-846d-795f-9b6f" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a438-966e-c66a-a4ad" name="Ace" hidden="false" collective="false" import="true" targetId="5ea0-143f-d65d-af24" type="selectionEntry"/>
         <entryLink id="503e-8bbd-ebc0-911d" name="Ace Skill Upgrade" hidden="false" collective="false" import="true" targetId="2913-fe8b-617b-62f5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="3.0"/>
-        <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0.0"/>
-        <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
+        <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="3"/>
+        <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0"/>
+        <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c756-895d-7cc3-802e" name="Veteran Pilot" hidden="false" collective="false" import="true" type="unit">
@@ -125,16 +125,16 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="f7ab-6ac4-e9f3-735c" name="New CategoryLink" hidden="false" targetId="c5ba-846d-795f-9b6f" primary="true"/>
+        <categoryLink id="f7ab-6ac4-e9f3-735c" name="Pilots" hidden="false" targetId="c5ba-846d-795f-9b6f" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="d5c8-c43d-3a95-0a10" name="Ace" hidden="false" collective="false" import="true" targetId="5ea0-143f-d65d-af24" type="selectionEntry"/>
         <entryLink id="89d4-a8ff-d3e6-7e60" name="Ace Skill Upgrade" hidden="false" collective="false" import="true" targetId="2913-fe8b-617b-62f5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="4.0"/>
-        <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0.0"/>
-        <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
+        <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="4"/>
+        <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0"/>
+        <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a006-10b7-f863-2a28" name="Light Frame" hidden="false" collective="false" import="true" type="model">
@@ -169,20 +169,20 @@ Secondary:
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="bee4-df5e-9879-2c37" name="New CategoryLink" hidden="false" targetId="be49-8610-9238-4495" primary="true"/>
+        <categoryLink id="bee4-df5e-9879-2c37" name="Frames" hidden="false" targetId="be49-8610-9238-4495" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="a5f9-8aba-665d-92f9" name="Propulsion Type" hidden="false" collective="false" import="true" defaultSelectionEntryId="3a97-a7d9-3974-9dca">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0766-6a62-a77e-b3ed" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b3b-1bbd-8eb5-1160" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0766-6a62-a77e-b3ed" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b3b-1bbd-8eb5-1160" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="b2ec-80ae-d059-3a0a" name="Jet" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1810-d922-1dc6-ebc8" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1810-d922-1dc6-ebc8" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -190,9 +190,9 @@ Secondary:
                 <infoLink id="8da7-cb20-d2a6-fefa" name="Jet" hidden="false" targetId="eccd-6d8b-97b9-a372" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b92b-e8b7-2fc1-b07d" name="Multi-Limbed" hidden="false" collective="false" import="true" type="upgrade">
@@ -200,16 +200,16 @@ Secondary:
                 <infoLink id="974a-4f5c-32c1-280b" name="Multi-Limbed" hidden="false" targetId="0d24-4e98-9516-6c77" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1f00-7e39-95b0-1f9d" name="Tracked" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d867-8fd6-09ad-0b06" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d867-8fd6-09ad-0b06" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -217,28 +217,28 @@ Secondary:
                 <infoLink id="88e5-4d11-c6ce-63bd" name="Tracked" hidden="false" targetId="68da-dcda-ca52-58b5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3a97-a7d9-3974-9dca" name="Bipedal" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0.0"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="dbf2-dda7-4a9b-24a1" name="Offensive Loadout" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2682-279d-8e7b-3134" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2682-279d-8e7b-3134" type="min"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="8f4c-4fe9-b0dd-be2f" name="Primary Hardpoint" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90d1-fa23-007e-823c" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90d1-fa23-007e-823c" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="2be1-dbf0-4186-f49b" name="Anti-Tank Missile" hidden="false" collective="false" import="true" type="upgrade">
@@ -257,9 +257,9 @@ Secondary:
                     <infoLink id="8422-73da-ce05-eedb" name="Secondary System" hidden="false" targetId="27a3-07de-acf2-c61b" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="0dcd-06d0-589e-919c" name="Autocannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -277,9 +277,9 @@ Secondary:
                     <infoLink id="6c2d-97d8-d14f-6eed" name="Assault" hidden="false" targetId="1f0e-d8b3-2c57-edd8" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e738-72c9-b595-09d6" name="Ballistic Shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -297,9 +297,9 @@ Secondary:
                     <infoLink id="e395-c693-3641-0025" name="Barrier (X)" hidden="false" targetId="3625-28c2-c494-9aed" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="1037-9b27-93fe-8b67" name="Laser" hidden="false" collective="false" import="true" type="upgrade">
@@ -320,9 +320,9 @@ Secondary:
                     <infoLink id="9c29-7cdb-fd30-94f1" name="Stressful" hidden="false" targetId="6753-152f-a57d-4669" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="ab74-c7d5-c43f-bc68" name="Rapid Fire Energy Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -342,9 +342,9 @@ Secondary:
                     <infoLink id="c6f3-29d6-1379-21e4" name="Energy" hidden="false" targetId="2bf8-727b-e13c-dfea" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="4dbe-04fa-edb6-ec47" name="Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -354,7 +354,7 @@ Secondary:
                         <characteristic name="Bonus Dice" typeId="dfcf-14b2-757c-17ab">2</characteristic>
                         <characteristic name="Damage" typeId="e39d-425e-0c49-55c7">1</characteristic>
                         <characteristic name="Effective Range" typeId="bc17-dc96-bd40-429e">6-30&quot;</characteristic>
-                        <characteristic name="Traits" typeId="0f8c-59c5-1f25-6304">Accurate	</characteristic>
+                        <characteristic name="Traits" typeId="0f8c-59c5-1f25-6304">Accurate</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -362,9 +362,9 @@ Secondary:
                     <infoLink id="330d-e224-f8ff-068b" name="Accurate" hidden="false" targetId="ca13-7b2c-5e7a-45f3" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="8e82-25b7-253e-a1a5" name="Rocket Pack" hidden="false" collective="false" import="true" type="upgrade">
@@ -386,9 +386,9 @@ Secondary:
                     <infoLink id="40fd-c4b9-293b-a897" name="Limited (X)" hidden="false" targetId="5567-0768-4962-2fa4" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="3572-9b44-a32a-473c" name="Rotary Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -407,9 +407,9 @@ Secondary:
                     <infoLink id="6d23-5d6a-ed25-93ef" name="Assault" hidden="false" targetId="1f0e-d8b3-2c57-edd8" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="34f2-c44d-1f13-096a" name="Shot Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -427,9 +427,9 @@ Secondary:
                     <infoLink id="e705-256c-2f36-a805" name="Frag" hidden="false" targetId="88eb-ecdf-fa22-62c2" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="ccb6-ed49-1043-b3d7" name="Thermal Spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -450,9 +450,9 @@ Secondary:
                     <infoLink id="1234-6150-f3a0-ebc9" name="Energy" hidden="false" targetId="2bf8-727b-e13c-dfea" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="5e79-909d-8195-aaa0" name="Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -471,9 +471,9 @@ Secondary:
                     <infoLink id="9bc0-147e-fd1f-7e1b" name="Melee" hidden="false" targetId="bcab-ea22-8b3f-5be3" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="2.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="2"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="d9bf-001a-fc19-308f" name="Energy Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -494,16 +494,16 @@ Secondary:
                     <infoLink id="55bf-1e84-8899-d262" name="Secondary System" hidden="false" targetId="27a3-07de-acf2-c61b" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="3.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="3"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup id="fd0a-ff58-c022-e6b7" name="Secondary Hardpoint" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05ab-2c6c-93e7-15b9" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05ab-2c6c-93e7-15b9" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="a19c-dbbf-dfd3-1c18" name="Anti-Tank Missile" hidden="false" collective="false" import="true" type="upgrade">
@@ -522,9 +522,9 @@ Secondary:
                     <infoLink id="df2b-a3d5-6da9-9079" name="Secondary System" hidden="false" targetId="27a3-07de-acf2-c61b" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="7394-03f5-0700-0745" name="Energy Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -545,9 +545,9 @@ Secondary:
                     <infoLink id="7e3f-0173-ef1a-e4d1" name="Secondary System" hidden="false" targetId="27a3-07de-acf2-c61b" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="3.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="3"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="06cb-1b28-2f03-e088" name="Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -566,9 +566,9 @@ Secondary:
                     <infoLink id="54ad-4c91-cedf-baa0" name="Melee" hidden="false" targetId="bcab-ea22-8b3f-5be3" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="2.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="2"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="b01d-39b6-d3f7-c714" name="Rocket Pack" hidden="false" collective="false" import="true" type="upgrade">
@@ -590,9 +590,9 @@ Secondary:
                     <infoLink id="908b-643e-16e4-c3aa" name="Limited (X)" hidden="false" targetId="5567-0768-4962-2fa4" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="9568-debd-52ff-cd57" name="Rotary Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -611,9 +611,9 @@ Secondary:
                     <infoLink id="6efb-d4c7-faa9-bd63" name="Assault" hidden="false" targetId="1f0e-d8b3-2c57-edd8" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e17a-6961-e528-4318" name="Thermal Spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -634,9 +634,9 @@ Secondary:
                     <infoLink id="35ad-a9bb-a5d6-8a83" name="Energy" hidden="false" targetId="2bf8-727b-e13c-dfea" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="5"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -648,9 +648,9 @@ Secondary:
         <entryLink id="52b7-ff0b-2f6d-c2a3" name="Technical Loadout" hidden="false" collective="false" import="true" targetId="02b6-d781-82b7-9dd4" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-        <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0.0"/>
-        <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
+        <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+        <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0"/>
+        <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5ea0-143f-d65d-af24" name="Ace" hidden="false" collective="false" import="true" type="upgrade">
@@ -659,21 +659,22 @@ Secondary:
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ea0-143f-d65d-af24" type="lessThan"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ea0-143f-d65d-af24" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ea0-143f-d65d-af24" type="lessThan"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ea0-143f-d65d-af24" type="atLeast"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="6657-9c68-8695-a1d6" shared="true" childName="Ronin"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b38c-171e-50cf-ee03" type="max"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2126-bf74-4655-9ac0" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b38c-171e-50cf-ee03" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2126-bf74-4655-9ac0" type="max"/>
       </constraints>
       <costs>
-        <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="1.0"/>
-        <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
-        <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0.0"/>
+        <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="1"/>
+        <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
+        <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="06a5-0918-e699-47c2" name="Medium Frame" hidden="false" collective="false" import="true" type="model">
@@ -715,20 +716,20 @@ Secondary:
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="b661-ab24-654a-26a9" name="New CategoryLink" hidden="false" targetId="be49-8610-9238-4495" primary="true"/>
+        <categoryLink id="b661-ab24-654a-26a9" name="Frames" hidden="false" targetId="be49-8610-9238-4495" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="0a80-4475-10fe-2616" name="Propulsion Type" hidden="false" collective="false" import="true" defaultSelectionEntryId="b0ba-e08f-b849-18d3">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b8f-7c1e-f3dc-72c0" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb0d-ce75-7e3c-e30a" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b8f-7c1e-f3dc-72c0" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb0d-ce75-7e3c-e30a" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="22f9-f5c5-4505-9dde" name="Jet" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1810-d922-1dc6-ebc8" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1810-d922-1dc6-ebc8" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -736,9 +737,9 @@ Secondary:
                 <infoLink id="8e0a-5741-ed26-969d" name="Jet" hidden="false" targetId="eccd-6d8b-97b9-a372" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a68b-af30-ca8a-5499" name="Multi-Limbed" hidden="false" collective="false" import="true" type="upgrade">
@@ -746,16 +747,16 @@ Secondary:
                 <infoLink id="d07a-c7fe-a7d1-7f91" name="Multi-Limbed" hidden="false" targetId="0d24-4e98-9516-6c77" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="45f0-7490-8020-a8d4" name="Tracked" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d867-8fd6-09ad-0b06" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d867-8fd6-09ad-0b06" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -763,28 +764,28 @@ Secondary:
                 <infoLink id="c39e-7990-0d73-4179" name="Tracked" hidden="false" targetId="68da-dcda-ca52-58b5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b0ba-e08f-b849-18d3" name="Bipedal" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0.0"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="e7e2-c3fd-013c-c671" name="Offensive Loadout" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6826-b9b5-fef1-272f" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6826-b9b5-fef1-272f" type="min"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="b076-6629-b57b-73c7" name="Secondary Hardpoint" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0820-3a36-b795-af8d" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0820-3a36-b795-af8d" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="2bb2-cf79-f395-691c" name="Thermal Spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -805,9 +806,9 @@ Secondary:
                     <infoLink id="68a4-2972-b0fc-7dfa" name="Energy" hidden="false" targetId="2bf8-727b-e13c-dfea" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="b1a8-e4e8-b3ed-ce66" name="Rotary Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -826,9 +827,9 @@ Secondary:
                     <infoLink id="a846-60e9-5298-e84f" name="Assault" hidden="false" targetId="1f0e-d8b3-2c57-edd8" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="fc41-a52c-da8e-92e2" name="Rocket Pack" hidden="false" collective="false" import="true" type="upgrade">
@@ -850,9 +851,9 @@ Secondary:
                     <infoLink id="1b7d-bddb-62e4-e087" name="Limited (X)" hidden="false" targetId="5567-0768-4962-2fa4" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="10.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="10"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="2aab-8735-2a11-c3dd" name="Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -871,9 +872,9 @@ Secondary:
                     <infoLink id="e983-bf77-a67e-26eb" name="Melee" hidden="false" targetId="bcab-ea22-8b3f-5be3" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="2.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="2"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="b562-7ad3-f534-63a5" name="Anti-Tank Missile" hidden="false" collective="false" import="true" type="upgrade">
@@ -892,16 +893,16 @@ Secondary:
                     <infoLink id="10b4-9e2e-d1c4-eaf0" name="Secondary System" hidden="false" targetId="27a3-07de-acf2-c61b" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="10.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="10"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup id="d15c-5b6b-988b-aced" name="Primary Hardpoint (L)" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b29-440f-5013-eebc" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b29-440f-5013-eebc" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="c33d-d985-8a59-4eea" name="Anti-Tank Missile" hidden="false" collective="false" import="true" type="upgrade">
@@ -920,9 +921,9 @@ Secondary:
                     <infoLink id="5130-964c-43eb-922c" name="Secondary System" hidden="false" targetId="27a3-07de-acf2-c61b" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="10.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="10"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="c250-0792-a1aa-5b1e" name="Autocannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -940,9 +941,9 @@ Secondary:
                     <infoLink id="ab56-a820-e6e7-c799" name="Assault" hidden="false" targetId="1f0e-d8b3-2c57-edd8" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="40.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="40"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="7c8c-448f-d65e-7d80" name="Ballistic Shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -960,9 +961,9 @@ Secondary:
                     <infoLink id="010b-8a16-ead6-773b" name="Barrier (X)" hidden="false" targetId="3625-28c2-c494-9aed" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="acf8-56ac-32e8-cf16" name="Laser" hidden="false" collective="false" import="true" type="upgrade">
@@ -983,9 +984,9 @@ Secondary:
                     <infoLink id="4e57-dac9-6931-7ffc" name="Stressful" hidden="false" targetId="6753-152f-a57d-4669" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="8.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="45.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="8"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="45"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="7356-5609-70f2-a868" name="Rapid Fire Energy Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1005,9 +1006,9 @@ Secondary:
                     <infoLink id="a6ca-94f1-b6ea-0956" name="Energy" hidden="false" targetId="2bf8-727b-e13c-dfea" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="8.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="45.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="8"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="45"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="4129-ce82-ccf8-0b57" name="Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -1017,7 +1018,7 @@ Secondary:
                         <characteristic name="Bonus Dice" typeId="dfcf-14b2-757c-17ab">2</characteristic>
                         <characteristic name="Damage" typeId="e39d-425e-0c49-55c7">1.5</characteristic>
                         <characteristic name="Effective Range" typeId="bc17-dc96-bd40-429e">6-30&quot;</characteristic>
-                        <characteristic name="Traits" typeId="0f8c-59c5-1f25-6304">Accurate	</characteristic>
+                        <characteristic name="Traits" typeId="0f8c-59c5-1f25-6304">Accurate</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -1025,9 +1026,9 @@ Secondary:
                     <infoLink id="b291-c598-399b-896f" name="Accurate" hidden="false" targetId="ca13-7b2c-5e7a-45f3" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="40.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="40"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="8fc1-6822-ee03-4f7a" name="Rocket Pack" hidden="false" collective="false" import="true" type="upgrade">
@@ -1049,9 +1050,9 @@ Secondary:
                     <infoLink id="19ea-0d44-e590-d916" name="Limited (X)" hidden="false" targetId="5567-0768-4962-2fa4" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="10.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="10"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="79ed-2ec0-f5eb-ae7b" name="Rotary Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1070,9 +1071,9 @@ Secondary:
                     <infoLink id="32ee-7d07-1b41-d99e" name="Assault" hidden="false" targetId="1f0e-d8b3-2c57-edd8" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="9620-4c23-4631-d866" name="Shot Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1090,9 +1091,9 @@ Secondary:
                     <infoLink id="f12e-d628-0f5f-77e3" name="Frag" hidden="false" targetId="88eb-ecdf-fa22-62c2" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="45.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="45"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="263d-a6c9-04c5-621e" name="Thermal Spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -1113,9 +1114,9 @@ Secondary:
                     <infoLink id="e0d9-9dc0-3540-8c29" name="Energy" hidden="false" targetId="2bf8-727b-e13c-dfea" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="3d98-aa3e-8a5f-12fe" name="Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1134,9 +1135,9 @@ Secondary:
                     <infoLink id="559c-cd1b-c3d3-2d9e" name="Melee" hidden="false" targetId="bcab-ea22-8b3f-5be3" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="2.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="2"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="9ce0-b70a-a6e1-5840" name="Energy Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1157,16 +1158,16 @@ Secondary:
                     <infoLink id="72ed-34f0-aaf9-cc8d" name="Secondary System" hidden="false" targetId="27a3-07de-acf2-c61b" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="3.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="3"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup id="e43e-3a5d-ea44-fa44" name="Primary Hardpoint (R)" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b464-41b3-208e-15fa" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b464-41b3-208e-15fa" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="1c27-8fd7-296b-adfd" name="Anti-Tank Missile" hidden="false" collective="false" import="true" type="upgrade">
@@ -1185,9 +1186,9 @@ Secondary:
                     <infoLink id="b175-cb5f-6973-10fa" name="Secondary System" hidden="false" targetId="27a3-07de-acf2-c61b" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="10.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="10"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e3da-1807-a015-be42" name="Autocannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1205,9 +1206,9 @@ Secondary:
                     <infoLink id="4738-80e5-13a8-2dfc" name="Assault" hidden="false" targetId="1f0e-d8b3-2c57-edd8" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="40.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="40"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="94b2-7ff8-911b-9a1f" name="Ballistic Shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -1225,9 +1226,9 @@ Secondary:
                     <infoLink id="5dfb-95aa-e427-ffa3" name="Barrier (X)" hidden="false" targetId="3625-28c2-c494-9aed" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="9f09-df35-3553-5585" name="Laser" hidden="false" collective="false" import="true" type="upgrade">
@@ -1248,9 +1249,9 @@ Secondary:
                     <infoLink id="3d3a-a8a2-a0dd-2d40" name="Stressful" hidden="false" targetId="6753-152f-a57d-4669" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="8.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="45.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="8"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="45"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="b021-0df0-ea2a-9742" name="Rapid Fire Energy Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1270,9 +1271,9 @@ Secondary:
                     <infoLink id="d9c3-3594-2bff-006c" name="Energy" hidden="false" targetId="2bf8-727b-e13c-dfea" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="8.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="45.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="8"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="45"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="beaf-2bb7-f604-7732" name="Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -1282,7 +1283,7 @@ Secondary:
                         <characteristic name="Bonus Dice" typeId="dfcf-14b2-757c-17ab">2</characteristic>
                         <characteristic name="Damage" typeId="e39d-425e-0c49-55c7">1.5</characteristic>
                         <characteristic name="Effective Range" typeId="bc17-dc96-bd40-429e">6-30&quot;</characteristic>
-                        <characteristic name="Traits" typeId="0f8c-59c5-1f25-6304">Accurate	</characteristic>
+                        <characteristic name="Traits" typeId="0f8c-59c5-1f25-6304">Accurate</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -1290,9 +1291,9 @@ Secondary:
                     <infoLink id="ce9c-9fc5-a408-57c3" name="Accurate" hidden="false" targetId="ca13-7b2c-5e7a-45f3" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="40.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="40"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="6997-6c2c-a793-e95e" name="Rocket Pack" hidden="false" collective="false" import="true" type="upgrade">
@@ -1314,9 +1315,9 @@ Secondary:
                     <infoLink id="a429-243a-83cc-1e27" name="Limited (X)" hidden="false" targetId="5567-0768-4962-2fa4" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="10.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="10"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="d789-f6b3-41d8-ace7" name="Rotary Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1335,9 +1336,9 @@ Secondary:
                     <infoLink id="93bf-e922-0e25-0c18" name="Assault" hidden="false" targetId="1f0e-d8b3-2c57-edd8" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="5094-a1b6-22ff-f0c0" name="Shot Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1355,9 +1356,9 @@ Secondary:
                     <infoLink id="f796-89f0-07c8-cbb4" name="Frag" hidden="false" targetId="88eb-ecdf-fa22-62c2" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="45.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="45"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="8f8a-41ea-a990-e55c" name="Thermal Spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -1378,9 +1379,9 @@ Secondary:
                     <infoLink id="1feb-2e88-44ce-e105" name="Energy" hidden="false" targetId="2bf8-727b-e13c-dfea" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="0e25-fb7b-3cf7-8b59" name="Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1399,9 +1400,9 @@ Secondary:
                     <infoLink id="ed2c-c49d-a279-fedd" name="Melee" hidden="false" targetId="bcab-ea22-8b3f-5be3" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="2.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="2"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="5efc-9631-1d54-56e9" name="Energy Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1422,9 +1423,9 @@ Secondary:
                     <infoLink id="5652-11d6-5a6b-45ad" name="Secondary System" hidden="false" targetId="27a3-07de-acf2-c61b" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="3.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="3"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1436,9 +1437,9 @@ Secondary:
         <entryLink id="7d3f-1374-5d9b-549f" name="Technical Loadout" hidden="false" collective="false" import="true" targetId="02b6-d781-82b7-9dd4" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-        <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0.0"/>
-        <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
+        <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+        <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0"/>
+        <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="feb6-4154-28b1-7bff" name="Heavy Frame" hidden="false" collective="false" import="true" type="model">
@@ -1488,20 +1489,20 @@ Secondary Right:
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="02b2-bb89-e9b6-d205" name="New CategoryLink" hidden="false" targetId="be49-8610-9238-4495" primary="true"/>
+        <categoryLink id="02b2-bb89-e9b6-d205" name="Frames" hidden="false" targetId="be49-8610-9238-4495" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="c9b4-f888-9033-57e8" name="Propulsion Type" hidden="false" collective="false" import="true" defaultSelectionEntryId="a875-cb4b-34a8-f6a7">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b341-a892-735f-ab28" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="711a-e45d-dea6-c204" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b341-a892-735f-ab28" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="711a-e45d-dea6-c204" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="d97a-7a3e-418f-6ca6" name="Jet" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1810-d922-1dc6-ebc8" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1810-d922-1dc6-ebc8" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1509,9 +1510,9 @@ Secondary Right:
                 <infoLink id="7e6b-c6b6-8575-05f3" name="Jet" hidden="false" targetId="eccd-6d8b-97b9-a372" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="50.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="50"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b157-e24b-549f-700b" name="Multi-Limbed" hidden="false" collective="false" import="true" type="upgrade">
@@ -1519,16 +1520,16 @@ Secondary Right:
                 <infoLink id="ac14-fbcc-73ea-8adb" name="Multi-Limbed" hidden="false" targetId="0d24-4e98-9516-6c77" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="40.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="40"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="76c4-431e-45c2-e1e0" name="Tracked" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d867-8fd6-09ad-0b06" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d867-8fd6-09ad-0b06" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1536,28 +1537,28 @@ Secondary Right:
                 <infoLink id="2325-a40c-54a5-456f" name="Tracked" hidden="false" targetId="68da-dcda-ca52-58b5" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a875-cb4b-34a8-f6a7" name="Bipedal" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0.0"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="4171-6fcc-435f-8320" name="Offensive Loadout" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdf8-9823-6b75-215f" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdf8-9823-6b75-215f" type="min"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="f0da-00af-34b8-2ed6" name="Primary Hardpoint (L)" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d984-798d-50cb-1b91" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d984-798d-50cb-1b91" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="58c3-afb5-8324-4d2e" name="Anti-Tank Missile" hidden="false" collective="false" import="true" type="upgrade">
@@ -1576,9 +1577,9 @@ Secondary Right:
                     <infoLink id="02a8-1ce1-45cf-be7b" name="Secondary System" hidden="false" targetId="27a3-07de-acf2-c61b" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="15.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="15"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="20cf-ca11-ef27-2a57" name="Autocannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1596,9 +1597,9 @@ Secondary Right:
                     <infoLink id="34e1-0e22-7dc2-bb60" name="Assault" hidden="false" targetId="1f0e-d8b3-2c57-edd8" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="50.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="50"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e02d-a6bf-462a-3022" name="Ballistic Shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -1616,9 +1617,9 @@ Secondary Right:
                     <infoLink id="0cf2-0539-ed37-2ec8" name="Barrier (X)" hidden="false" targetId="3625-28c2-c494-9aed" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="35.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="35"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="0887-6b94-91e9-f41f" name="Laser" hidden="false" collective="false" import="true" type="upgrade">
@@ -1639,9 +1640,9 @@ Secondary Right:
                     <infoLink id="60d7-299a-0b5e-4ae4" name="Stressful" hidden="false" targetId="6753-152f-a57d-4669" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="9.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="60.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="9"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="60"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="75cf-0a1b-636d-8097" name="Rapid Fire Energy Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1661,9 +1662,9 @@ Secondary Right:
                     <infoLink id="49af-b800-caa3-3521" name="Energy" hidden="false" targetId="2bf8-727b-e13c-dfea" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="9.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="55.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="9"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="55"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="8aaa-0451-455e-3198" name="Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -1673,7 +1674,7 @@ Secondary Right:
                         <characteristic name="Bonus Dice" typeId="dfcf-14b2-757c-17ab">2</characteristic>
                         <characteristic name="Damage" typeId="e39d-425e-0c49-55c7">2</characteristic>
                         <characteristic name="Effective Range" typeId="bc17-dc96-bd40-429e">6-30&quot;</characteristic>
-                        <characteristic name="Traits" typeId="0f8c-59c5-1f25-6304">Accurate	</characteristic>
+                        <characteristic name="Traits" typeId="0f8c-59c5-1f25-6304">Accurate</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -1681,9 +1682,9 @@ Secondary Right:
                     <infoLink id="7c96-b87c-29b1-7802" name="Accurate" hidden="false" targetId="ca13-7b2c-5e7a-45f3" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="8.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="50.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="8"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="50"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="9657-ece7-ea23-ddaf" name="Rocket Pack" hidden="false" collective="false" import="true" type="upgrade">
@@ -1705,9 +1706,9 @@ Secondary Right:
                     <infoLink id="dc65-154c-b127-a805" name="Limited (X)" hidden="false" targetId="5567-0768-4962-2fa4" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="15.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="15"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="23a8-17e8-5cf4-7171" name="Rotary Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1726,9 +1727,9 @@ Secondary Right:
                     <infoLink id="ecc6-dbdf-86aa-e64a" name="Assault" hidden="false" targetId="1f0e-d8b3-2c57-edd8" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="bd12-917c-dae9-2ba9" name="Shot Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1746,9 +1747,9 @@ Secondary Right:
                     <infoLink id="e6de-f943-9710-5ec1" name="Frag" hidden="false" targetId="88eb-ecdf-fa22-62c2" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="55.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="55"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="d4f7-7e97-0402-74ba" name="Thermal Spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -1769,9 +1770,9 @@ Secondary Right:
                     <infoLink id="fae0-d433-450f-ef3e" name="Energy" hidden="false" targetId="2bf8-727b-e13c-dfea" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="35.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="35"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="2d22-53fb-1c13-9462" name="Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1790,9 +1791,9 @@ Secondary Right:
                     <infoLink id="26e6-d775-bb37-f9a2" name="Melee" hidden="false" targetId="bcab-ea22-8b3f-5be3" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="f4cb-2037-3983-6976" name="Energy Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1813,16 +1814,39 @@ Secondary Right:
                     <infoLink id="9b51-d4cf-208f-847f" name="Secondary System" hidden="false" targetId="27a3-07de-acf2-c61b" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="3.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="3"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="beb6-4810-6674-768b" name="Howitzer" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="c3ae-f46f-d7f3-0eb2" name="Howitzer" hidden="false" typeId="0071-2b48-7ba9-888d" typeName="Offensive Loadout">
+                      <characteristics>
+                        <characteristic name="Bonus Dice" typeId="dfcf-14b2-757c-17ab">1</characteristic>
+                        <characteristic name="Damage" typeId="e39d-425e-0c49-55c7">4</characteristic>
+                        <characteristic name="Effective Range" typeId="bc17-dc96-bd40-429e">12-36&quot;</characteristic>
+                        <characteristic name="Traits" typeId="0f8c-59c5-1f25-6304">Artillery, Blast (3&quot;), Indirect, Slow</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="7a20-4768-c41e-5ddd" name="Beam" hidden="false" targetId="6778-77a8-30dd-bfea" type="rule"/>
+                    <infoLink id="1a44-c8f0-10e3-8f1a" name="Energy" hidden="false" targetId="2bf8-727b-e13c-dfea" type="rule"/>
+                    <infoLink id="f95f-03a4-e9bf-0bd6" name="Slow" hidden="false" targetId="1b60-017a-1799-c250" type="rule"/>
+                    <infoLink id="c88e-0ab4-be30-95ef" name="Stressful" hidden="false" targetId="6753-152f-a57d-4669" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="60"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="10"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup id="515a-f93e-d85d-98de" name="Primary Hardpoint (R)" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7def-0996-4757-3b00" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7def-0996-4757-3b00" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="5f82-0b7e-76ef-25e0" name="Anti-Tank Missile" hidden="false" collective="false" import="true" type="upgrade">
@@ -1841,9 +1865,9 @@ Secondary Right:
                     <infoLink id="0183-d332-53d0-faea" name="Secondary System" hidden="false" targetId="27a3-07de-acf2-c61b" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="15.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="15"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="a72a-517b-7d28-beba" name="Autocannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1861,9 +1885,9 @@ Secondary Right:
                     <infoLink id="8a0d-d883-212b-d7cc" name="Assault" hidden="false" targetId="1f0e-d8b3-2c57-edd8" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="50.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="50"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="2807-52df-c00d-fd9d" name="Ballistic Shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -1881,9 +1905,9 @@ Secondary Right:
                     <infoLink id="dc51-32ee-aeb0-1640" name="Barrier (X)" hidden="false" targetId="3625-28c2-c494-9aed" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="35.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="35"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="5ddf-1b94-dbb8-eada" name="Laser" hidden="false" collective="false" import="true" type="upgrade">
@@ -1904,9 +1928,9 @@ Secondary Right:
                     <infoLink id="b737-f9d2-c116-0419" name="Stressful" hidden="false" targetId="6753-152f-a57d-4669" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="9.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="60.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="9"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="60"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e146-8fbb-b887-76aa" name="Rapid Fire Energy Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1926,9 +1950,9 @@ Secondary Right:
                     <infoLink id="b042-e1dc-9485-75af" name="Energy" hidden="false" targetId="2bf8-727b-e13c-dfea" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="9.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="55.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="9"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="55"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="1710-06f6-5aee-1ff0" name="Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -1938,7 +1962,7 @@ Secondary Right:
                         <characteristic name="Bonus Dice" typeId="dfcf-14b2-757c-17ab">2</characteristic>
                         <characteristic name="Damage" typeId="e39d-425e-0c49-55c7">2</characteristic>
                         <characteristic name="Effective Range" typeId="bc17-dc96-bd40-429e">6-30&quot;</characteristic>
-                        <characteristic name="Traits" typeId="0f8c-59c5-1f25-6304">Accurate	</characteristic>
+                        <characteristic name="Traits" typeId="0f8c-59c5-1f25-6304">Accurate</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -1946,9 +1970,9 @@ Secondary Right:
                     <infoLink id="7852-558f-6498-4f1d" name="Accurate" hidden="false" targetId="ca13-7b2c-5e7a-45f3" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="8.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="50.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="8"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="50"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="7fbc-50fc-24f8-d2eb" name="Rocket Pack" hidden="false" collective="false" import="true" type="upgrade">
@@ -1970,9 +1994,9 @@ Secondary Right:
                     <infoLink id="9230-0faa-94f7-b1fa" name="Limited (X)" hidden="false" targetId="5567-0768-4962-2fa4" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="15.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="15"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="9c8d-2aa9-f2a1-a849" name="Rotary Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1991,9 +2015,9 @@ Secondary Right:
                     <infoLink id="515b-29d7-adfd-c619" name="Assault" hidden="false" targetId="1f0e-d8b3-2c57-edd8" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="f2fe-8fcc-2fd0-14bf" name="Shot Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2011,9 +2035,9 @@ Secondary Right:
                     <infoLink id="3e6e-a9c4-a48a-3d7d" name="Frag" hidden="false" targetId="88eb-ecdf-fa22-62c2" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="55.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="55"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="42f9-3f7e-edf0-84f3" name="Thermal Spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -2034,9 +2058,9 @@ Secondary Right:
                     <infoLink id="a988-a366-d3f9-f715" name="Energy" hidden="false" targetId="2bf8-727b-e13c-dfea" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="35.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="35"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="dbe0-9b9c-00fb-b74d" name="Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2055,9 +2079,9 @@ Secondary Right:
                     <infoLink id="9c4d-9a8a-5be8-7fd1" name="Melee" hidden="false" targetId="bcab-ea22-8b3f-5be3" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="abbc-0d9d-2531-64a2" name="Energy Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2078,16 +2102,39 @@ Secondary Right:
                     <infoLink id="051a-7b64-56fb-53b5" name="Secondary System" hidden="false" targetId="27a3-07de-acf2-c61b" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="3.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="3"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Howitzer" hidden="false" id="15a1-430d-88ba-6cb5" collective="false">
+                  <profiles>
+                    <profile name="Howitzer" typeId="0071-2b48-7ba9-888d" typeName="Offensive Loadout" hidden="false" id="b843-ca18-5bba-8164">
+                      <characteristics>
+                        <characteristic name="Bonus Dice" typeId="dfcf-14b2-757c-17ab">1</characteristic>
+                        <characteristic name="Damage" typeId="e39d-425e-0c49-55c7">4</characteristic>
+                        <characteristic name="Effective Range" typeId="bc17-dc96-bd40-429e">12-36&quot;</characteristic>
+                        <characteristic name="Traits" typeId="0f8c-59c5-1f25-6304">Artillery, Blast (3&quot;), Indirect, Slow</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Beam" id="db52-2c1a-48f9-3ad5" hidden="false" targetId="6778-77a8-30dd-bfea" type="rule"/>
+                    <infoLink name="Energy" id="5cfe-bbd5-a0e1-613a" hidden="false" targetId="2bf8-727b-e13c-dfea" type="rule"/>
+                    <infoLink name="Slow" id="4a70-df47-4501-b918" hidden="false" targetId="1b60-017a-1799-c250" type="rule"/>
+                    <infoLink name="Stressful" id="ab9b-78cb-63d3-eff8" hidden="false" targetId="6753-152f-a57d-4669" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="60"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="10"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup id="12ea-87b2-94c5-6f7a" name="Secondary Hardpoint (L)" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c53-f151-1427-8eec" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c53-f151-1427-8eec" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="83c7-af17-83c8-0f22" name="Anti-Tank Missile" hidden="false" collective="false" import="true" type="upgrade">
@@ -2106,9 +2153,9 @@ Secondary Right:
                     <infoLink id="9cdf-197b-4ecf-f4af" name="Secondary System" hidden="false" targetId="27a3-07de-acf2-c61b" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="15.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="15"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="0b06-58f6-359f-6078" name="Rocket Pack" hidden="false" collective="false" import="true" type="upgrade">
@@ -2130,9 +2177,9 @@ Secondary Right:
                     <infoLink id="90e6-d329-9af9-a189" name="Limited (X)" hidden="false" targetId="5567-0768-4962-2fa4" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="15.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="15"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="1763-dc26-7a5d-42b5" name="Rotary Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2151,9 +2198,9 @@ Secondary Right:
                     <infoLink id="a44f-12bc-c5bc-8fa5" name="Assault" hidden="false" targetId="1f0e-d8b3-2c57-edd8" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="c53c-2ecb-ad3f-2d9a" name="Thermal Spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -2174,9 +2221,9 @@ Secondary Right:
                     <infoLink id="933c-53e1-599d-8f4c" name="Energy" hidden="false" targetId="2bf8-727b-e13c-dfea" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="35.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="35"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="42e4-cbb2-8d67-70c8" name="Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2195,9 +2242,9 @@ Secondary Right:
                     <infoLink id="f8d8-8989-5577-68c0" name="Melee" hidden="false" targetId="bcab-ea22-8b3f-5be3" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="020b-b7fd-e306-0c6c" name="Energy Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2218,16 +2265,16 @@ Secondary Right:
                     <infoLink id="2630-e3c9-49c8-e88a" name="Secondary System" hidden="false" targetId="27a3-07de-acf2-c61b" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="3.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="3"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup id="e8da-e522-67f3-c563" name="Secondary Hardpoint (R)" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3dd-150a-1616-bea2" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3dd-150a-1616-bea2" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="3232-f61c-5e39-9c04" name="Anti-Tank Missile" hidden="false" collective="false" import="true" type="upgrade">
@@ -2246,9 +2293,9 @@ Secondary Right:
                     <infoLink id="e4c7-ff35-ed9d-bb39" name="Secondary System" hidden="false" targetId="27a3-07de-acf2-c61b" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="15.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="15"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="15e1-ad15-57fb-c561" name="Rocket Pack" hidden="false" collective="false" import="true" type="upgrade">
@@ -2270,9 +2317,9 @@ Secondary Right:
                     <infoLink id="6f22-b2e6-1ca9-31d2" name="Limited (X)" hidden="false" targetId="5567-0768-4962-2fa4" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="15.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="15"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="11dc-01e5-c809-f481" name="Rotary Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2291,9 +2338,9 @@ Secondary Right:
                     <infoLink id="658b-1dd8-71b1-1544" name="Assault" hidden="false" targetId="1f0e-d8b3-2c57-edd8" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="115d-e855-1a44-57e1" name="Thermal Spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -2314,9 +2361,9 @@ Secondary Right:
                     <infoLink id="186f-6c43-9dd6-a6f0" name="Energy" hidden="false" targetId="2bf8-727b-e13c-dfea" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="35.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="7"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="35"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="7722-6179-c178-17fa" name="Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2335,9 +2382,9 @@ Secondary Right:
                     <infoLink id="04a8-cee6-0527-26f9" name="Melee" hidden="false" targetId="bcab-ea22-8b3f-5be3" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="6"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="567f-3a4f-ce90-32c6" name="Energy Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2358,9 +2405,9 @@ Secondary Right:
                     <infoLink id="dd35-8632-0479-0c1d" name="Secondary System" hidden="false" targetId="27a3-07de-acf2-c61b" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="3.0"/>
-                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25.0"/>
+                    <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                    <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="3"/>
+                    <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="25"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2372,9 +2419,9 @@ Secondary Right:
         <entryLink id="50f9-bc60-c2b4-6bfd" name="Technical Loadout" hidden="false" collective="false" import="true" targetId="02b6-d781-82b7-9dd4" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-        <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0.0"/>
-        <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
+        <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+        <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0"/>
+        <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2383,34 +2430,34 @@ Secondary Right:
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ea0-143f-d65d-af24" type="atLeast"/>
+            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ea0-143f-d65d-af24" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7be-7715-eaf8-2714" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62c3-4be1-429a-371c" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7be-7715-eaf8-2714" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62c3-4be1-429a-371c" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="1ad6-e162-02c5-94de" name="Manoeuvre" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
-            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0.0"/>
+            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
+            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f958-b70a-022b-d1b7" name="Gunnery" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
-            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0.0"/>
+            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
+            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5929-1d3e-f32d-80ae" name="Technical" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
-            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0.0"/>
+            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
+            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2419,12 +2466,12 @@ Secondary Right:
       <selectionEntries>
         <selectionEntry id="ecca-5560-22b5-75d0" name="Chaff Launcher" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="741d-ea7a-44d6-58fc" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="741d-ea7a-44d6-58fc" type="max"/>
           </constraints>
           <costs>
-            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
-            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1.0"/>
+            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
+            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2a91-26bf-3559-c346" name="Decoy Beacon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2433,69 +2480,69 @@ Secondary Right:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a006-10b7-f863-2a28" type="notInstanceOf"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a006-10b7-f863-2a28" type="notInstanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="937e-dfdf-f2aa-dbd8" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="937e-dfdf-f2aa-dbd8" type="max"/>
           </constraints>
           <costs>
-            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30.0"/>
-            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0.0"/>
+            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="30"/>
+            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7cc0-32a7-778e-99ca" name="Ejection System" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa93-aec3-257b-199d" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa93-aec3-257b-199d" type="max"/>
           </constraints>
           <costs>
-            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
-            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1.0"/>
+            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
+            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="049d-815e-2228-3114" name="Electronic Countermeasures" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b533-d1e6-0228-0089" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b533-d1e6-0228-0089" type="max"/>
           </constraints>
           <costs>
-            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15.0"/>
-            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="2.0"/>
+            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15"/>
+            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="2"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1ffc-502b-9396-7e81" name="Energy Shielding" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f55f-2c4e-7e88-55cb" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f55f-2c4e-7e88-55cb" type="max"/>
           </constraints>
           <costs>
-            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15.0"/>
-            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="2.0"/>
+            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="15"/>
+            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="2"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="edf0-b62e-4c29-6ff0" name="Fuel Reserves" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62c7-c04d-9ef1-dee1" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62c7-c04d-9ef1-dee1" type="max"/>
           </constraints>
           <costs>
-            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20.0"/>
-            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="2.0"/>
+            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="20"/>
+            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="2"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2af5-36a5-c50a-5bab" name="Heat Sink" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64d0-5c71-69a2-36de" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64d0-5c71-69a2-36de" type="max"/>
           </constraints>
           <costs>
-            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
-            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1.0"/>
+            <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
+            <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+            <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2504,113 +2551,113 @@ Secondary Right:
           <selectionEntries>
             <selectionEntry id="68ee-7724-8073-50b0" name="Frame Body" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1427-015d-6b90-77bf" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1427-015d-6b90-77bf" type="max"/>
               </constraints>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4638-e365-7846-61c7" name="Sensors" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48bf-99aa-5866-36b6" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48bf-99aa-5866-36b6" type="max"/>
               </constraints>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="98cd-81a8-680a-a29c" name="Left Hardpoint" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a006-10b7-f863-2a28" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a006-10b7-f863-2a28" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7006-db70-34aa-125f" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7006-db70-34aa-125f" type="max"/>
               </constraints>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="eb87-62e1-90f4-e116" name="Propulsion" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac3a-43c3-1d34-80fc" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac3a-43c3-1d34-80fc" type="max"/>
               </constraints>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c93d-99b7-f3d4-f849" name="Left Secondary Hardpoint" hidden="true" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1f5-4c87-e764-de9f" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1f5-4c87-e764-de9f" type="max"/>
               </constraints>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="463d-cffc-685c-e3e6" name="Primary Hardpoint" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a006-10b7-f863-2a28" type="notInstanceOf"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a006-10b7-f863-2a28" type="notInstanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a49-403e-4d21-55ab" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a49-403e-4d21-55ab" type="max"/>
               </constraints>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="305a-53c3-d61e-54eb" name="Right Hardpoint" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a006-10b7-f863-2a28" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a006-10b7-f863-2a28" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9f1-a52a-7370-60b8" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9f1-a52a-7370-60b8" type="max"/>
               </constraints>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1fba-6fea-4574-a998" name="Right Secondary Hardpoint" hidden="true" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a892-9aee-cdaa-a929" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a892-9aee-cdaa-a929" type="max"/>
               </constraints>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b781-c22d-4eb7-88ba" name="Secondary Hardpoint" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c4d-5c69-7821-7b56" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c4d-5c69-7821-7b56" type="max"/>
               </constraints>
               <costs>
-                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10.0"/>
-                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0.0"/>
-                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1.0"/>
+                <cost name=" Materiel" typeId="a72c-1f9c-fecf-8113" value="10"/>
+                <cost name=" Pilot Value" typeId="b3ca-2e05-1751-fe75" value="0"/>
+                <cost name=" Weight" typeId="7152-d956-d07d-32cf" value="1"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
