@@ -1,46 +1,27 @@
-Gamma Wolves
-==================
+# Gamma Wolves data
 
-[![Latest release](https://img.shields.io/github/release/BSData/gamma-wolves.svg?style=flat-square)](https://github.com/BSData/gamma-wolves/releases/latest)
-[![Commits (since latest release)](https://img.shields.io/github/commits-since/BSData/gamma-wolves/latest.svg?style=flat-square)](https://github.com/BSData/gamma-wolves/releases)
-[![Open bugs](https://img.shields.io/github/issues/BSData/gamma-wolves/bug.svg?style=flat-square&label=bugs)](https://github.com/BSData/gamma-wolves/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
-[![Contributors](https://img.shields.io/github/contributors/BSData/gamma-wolves.svg?style=flat-square)](https://github.com/BSData/gamma-wolves/graphs/contributors)
-[![Commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/gamma-wolves.svg?style=flat-square)](https://github.com/BSData/gamma-wolves/pulse/monthly)
+Army list data files for Gamma Wolves.
 
-[![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://www.bsdata.net/discord)
+> **Community rehost.** These files were written by the community contributors listed below and were previously published at `github.com/BSData/gamma-wolves`, which is no longer online. This copy keeps them available and open to updates.
+>
+> They are not made, maintained or endorsed by NewRecruit. Nobody here is affiliated with or endorsed by the publisher of Gamma Wolves. All game names and trademarks belong to their respective owners. You still need the official rules to play.
 
-## Overview ##
+## Is this maintained?
 
-BSData organisation created this project. It's a GitHub repository of datafiles.
-Maintained by community, in no way endorsed by BattleScribe or any other company/publisher. If you want to help develop - cool! We need you! Take a look at [our homepage][BSData.net]
+It is open for updates, not archived. It is kept up by whoever contributes to it, so check the commit history to see how current it is. Last data change before the rehost: 2026-05-01.
 
-These datafiles will contain all the profile information publicly available for Ash Barker's Gamma Wolves tabletop miniatures skirmish game, published by [Osprey][].
-As of the initial commit, rules text is missing. This will be added over time, but the core list-building experience should already be sufficient for most players.
+## How to update it
 
-<img src="https://ijlbvo-4is1kgkfewv0.cloudmaestro.com/j6gvWJzlf/media/catalog/product/cache/1/image/958def80b7ce809d46640f86aa46835c/9/7/w9781472837738_33.jpg.pagespeed.ic.x43QFhq4M3.webp" />
+- **Pull request:** fork this repository, make your changes and open a pull request.
+- **Write access:** if you want to maintain this game, ask on the NewRecruit Discord: https://discord.gg/cCtqGbugwb
 
-### How to get the datafiles ###
+## File format
 
-Visit the [BattleScribe homepage][BattleScribe] and install the mobile or desktop app on the platform of your choice.
-Data files are hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][].
-Android and PC users are recommended to use the [BSData Gallery][] data-updating method to avoid AppSpot stability issues.
+The files are JSON, converted on 2026-11-16 from the original BattleScribe XML (`.cat`/`.gst`). The XML versions are in the git history before that commit.
 
-## Bugs, Errors, and Suggestions ##
-[Bugs, Errors, and Suggestions]: #bugs-errors-and-suggestions
+## Authors
 
-Great, thank you! Please [Report a bug][bug report] - you can also suggest enhancements and raise other issues there.
+From the git history of the data files:
 
-## Links ##
-
-* [Osprey Publishing][Osprey]
-* [Guerilla Miniature Games][]
-* [BSData organization homepage][BSData.net]
-* [BattleScribe app homepage](https://www.battlescribe.net/)
-
-[Osprey]: https://ospreypublishing.com/gamma-wolves
-[Guerilla Miniature Games]: https://www.youtube.com/channel/UCbO4Vs1vlAA9hz7Ad7IMgug
-[BSData Gallery]: https://github.com/BSData/wh40k/issues/1706
-[bug report]: https://github.com/BSData/bushido/issues/new/choose
-[BattleScribe]: http://www.battlescribe.net/
-[BattleScribe Data on Appspot]: http://battlescribedata.appspot.com/#/repos
-[BSData.net]: https://www.bsdata.net/
+- Fleafa
+- MCMBen
